@@ -36,6 +36,6 @@ public class HomeController : Controller
     }
     public IActionResult Logout()
     {
-        return SignOut("Cookies", "iodc");
+        return SignOut("Cookies", "oidc");
     }
 }
