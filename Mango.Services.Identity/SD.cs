@@ -39,7 +39,7 @@ public static class SD
             {
                 ClientId = "mango",
                 ClientSecrets = { new Secret("secret".Sha256()) },
-                AllowedGrantTypes = GrantTypes.ClientCredentials,
+                AllowedGrantTypes = GrantTypes.Code,
                 RedirectUris = {"https://localhost:37108/signin-oidc"},
                 PostLogoutRedirectUris = {"http://localhost:37108/signout-callback-oidc"},
                 AllowedScopes = new List<string>
